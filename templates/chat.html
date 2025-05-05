@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Chatbot</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            <div class="user-info">
+                <div class="avatar">
+                    <img src="{{ url_for('static', filename='image/doctor.png') }}" alt="Medical Chatbot">
+                </div>
+                <div class="user-details">
+                    <h3>Medical Chatbot</h3>
+                    <p>Ask me anything!</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="chat-messages" id="chat-messages">
+            <!-- Messages will appear here -->
+            <div class="message bot-message">
+                <div class="avatar">
+                    <img src="{{ url_for('static', filename='image/doctor.png') }}" alt="Bot">
+                </div>
+                <div class="message-content">
+                    <p>Hello! I'm your medical assistant. How can I help you today?</p>
+                    <span class="timestamp">13:28</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="chat-input">
+            <form id="message-form">
+                <input type="text" id="user-input" placeholder="Type your message..." autocomplete="off">
+                <button type="submit" id="send-button">
+                    <span class="material-icons">send</span>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
