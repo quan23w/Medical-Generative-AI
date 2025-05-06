@@ -6,7 +6,9 @@ A medical information assistant powered by Generative AI that provides accurate 
 This project implements a Retrieval-Augmented Generation (RAG) chatbot that answers medical questions using information from medical databases and encyclopedias. The chatbot uses Google's Gemini 1.5 Pro model enhanced with document retrieval to provide reliable medical information.
 
 ## DEMO
-![Medical AI Chatbot Demo](image.png "Medical AI Chatbot Interface")
+<p align="center">
+  <img src="image.png" width=800><br/>
+</p>
 
 ## Features
 - **Accurate Medical Information**: Retrieves information from trusted medical sources
